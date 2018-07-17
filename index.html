@@ -1,46 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jacob Ochoa</title>
 
-<style>
-    body{
-        margin:0;
-    }
-</style>
+    <style>
+        body {
+            margin: 0;
+            font-family: monospace;
+            font-size: 12px;
+
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-template-rows: auto;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        #my_name {
+            font-size: 3em;
+        }
+
+        #Contact_info {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+        }
+    </style>
 
 </head>
+
 <body>
 
-    <!-- main heading -->
-    <h1>Jacob Ochoa</h1>
-    
-    <!-- main sub heading -->
-    <p>Microsoft Professional, Powershell Expert,  Linux Enthusiast</p>
+    <header>
+        <h1 id="my_name">
+            Jacob Ochoa
+        </h1>
 
-    <!-- contact information -->
-    <h2>Contact</h2>
-    <p>230 E Dunne Ave. Apt 521</p>
-    <p>Morgan Hill, CA 95037</p>
-    <p>(408) 659-0240</p>
-    <p>jacob.ochoa@gmail.com</p>
+        <div id="contact_info">
+            <p>230 E Dunne Ave. Apt 521</p>
+            <p>Morgan Hill, CA 95037</p>
+            <p>+1 (408) 659-0240</p>
+            <p>jacob.ochoa@gmail.com</p>
+            <p>jacobochoa.info</p>
+        </div>
+    </header>
 
-    <!-- Job History -->
-    <h2>Job History</h2>
-    <h3>Data Analyst</h3>
-    <p>Morgan Hill Unified School District</p>
+    <main>
+
+        <!-- Summary:  1-2 sentances -->
+        <article>
+            <h2>Summary</h2>
+            <p>Microsoft Professional, Powershell Expert, Linux Enthusiast</p>
+        </article>
+
+        <!-- Experience -->
+        <article>
+            <h2>Experience</h2>
+            
+            
+            <section>
+                <h3 title="Job Title">Data Analyst</h3>
+                <div class="job_info">
+                    <span title="Company Name" > Morgan Hill Unified School District</span><span>, </span>
+                    <span title="Employment Date Span" >Aug 2017 to Aug 2018 </span>
+                </div>
+                <ul title="Practical Accomplishments" >
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
 
 
-    <!-- Education -->
-
-    <!-- References -->
-
-    <!-- Expertise -->
-
-    <!-- Projects -->
+        </article>
+    </main>
 
 </body>
+
 </html>
