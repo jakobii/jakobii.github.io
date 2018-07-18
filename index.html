@@ -5,18 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jacob Ochoa</title>
-
+    <title>Jacob Ochoa's Resume</title>
     <style>
         body {
             margin: 0;
             padding: 2em;
-            font-family: monospace;
+            font-family:  monospace;
             font-size: 12px;
-
             display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         header {
@@ -27,6 +26,13 @@
 
         p {
             margin: 0;
+        }
+
+        #resume {
+            max-width: 700px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
         }
 
         #my_name {
@@ -41,7 +47,8 @@
             grid-gap: .5em;
             padding: 0;
         }
-        .contact{
+
+        .contact {
             text-align: right;
         }
 
@@ -59,11 +66,12 @@
             border-radius: .5em;
 
         }
-        
-        #certificates{
+
+        #certificates {
             display: flex;
             flex-wrap: wrap;
         }
+
         .certificate_thumbnail {
             max-height: 7em;
             margin: 1em;
@@ -73,119 +81,125 @@
 </head>
 
 <body>
+    <article id="resume">
+        <header>
+            <h1 id="my_name">
+                Jacob Ochoa
+            </h1>
 
-    <header>
-        <h1 id="my_name">
-            Jacob Ochoa
-        </h1>
-
-        <div id="contact_info">
-            <ul id="contact_info_list">
-                <li class="contact" title="Address">230 E Dunne Ave. Apt 521</li>
-                <li class="contact" title="City">Morgan Hill, CA 95037</li>
-                <li class="contact" title="PhoneNumber">+1 (408) 659-0240</li>
-                <li class="contact" title="EmailAddress">jacob.ochoa@gmail.com</li>
-                <li class="contact" title="Website">jacobochoa.info</li>
-            </ul>
-        </div>
-    </header>
-
-    <main>
-
-        <!-- Summary:  1-2 sentances -->
-        <article>
-            <h2>Summary</h2>
-            <p>Microsoft Professional, Powershell Expert, Linux Enthusiast</p>
-        </article>
-        <!-- Summary:  1-2 sentances -->
-        <article>
-            <h2>Skills</h2>
-            <div class="skills">
-                <span class="skill">Powershell</span>
-                <span class="skill">SQL</span>
-                <span class="skill">Python</span>
-                <span class="skill">Git</span>
-                <span class="skill">Java</span>
-                <span class="skill">C++</span>
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">PHP</span>
-                <span class="skill">Audio Video</span>
-                <span class="skill">Adobe Photoshop</span>
-                <span class="skill">Adobe Illustrator</span>
-                <span class="skill">Computer Hardware</span>
-                <span class="skill">Computer Networking</span>
-                <span class="skill">CloneZilla</span>
-                <span class="skill">VMware ESXI</span>
-                <span class="skill">MySQL DBA</span>
-                <span class="skill">MongoDB</span>
-                <span class="skill">Windows Admin</span>
-                <span class="skill">Linux Admin</span>
-                <span class="skill">Microsoft Excel</span>
-                <span class="skill">Google App Scripts</span>
-                <span class="skill">SQL Server DBA</span>
-                <span class="skill">Regular Expressions</span>
-                <span class="skill">Golang</span>
-                <span class="skill">Cisco Switching</span>
-                <span class="skill">Hyper-V</span>
-                <span class="skill">Bash</span>
-                <span class="skill">pfSense</span>
+            <div id="contact_info">
+                <ul id="contact_info_list">
+                    <li class="contact" title="Address">230 E Dunne Ave. Apt 521</li>
+                    <li class="contact" title="City">Morgan Hill, CA 95037</li>
+                    <li class="contact" title="PhoneNumber"><a href="tel:14086590240">+1 (408) 659-0240</a></li>
+                    <li class="contact" title="EmailAddress">
+                        <a href="mailto:jacob.ochoa@gmail.com?subject=Your%20Hired!">jacob.ochoa@gmail.com</a>
+                    </li>
+                    <li class="contact" title="Website">
+                        <a href="https://jacobochoa.info/aboutme">jacobochoa.info</a>
+                    </li>
+                </ul>
             </div>
+        </header>
 
-        </article>
-        <!-- Experience -->
-        <article>
-            <h2>Experience</h2>
+        <main>
 
-
-            <section>
-                <h3 title="Job Title">Data Analyst</h3>
-                <div class="job_info">
-                    <span title="Company Name"> Morgan Hill Unified School District</span>
-                    <span>, </span>
-                    <span title="Employment Date Span">Sep 2017 - <i>Present</i> </span>
+            <!-- Summary:  1-2 sentances -->
+            <article>
+                <h2>Summary</h2>
+                <p>I thirive on automation. I enjoy teaching others what I know. I'm looking for a fun company that will give me the opportunity to use my creative skills to solve complex problems.</p>
+            </article>
+            <!-- Summary:  1-2 sentances -->
+            <article>
+                <h2>Skills</h2>
+                <div class="skills">
+                    <span class="skill">Powershell</span>
+                    <span class="skill">SQL</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">Git</span>
+                    <span class="skill">Java</span>
+                    <span class="skill">C++</span>
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">PHP</span>
+                    <span class="skill">Audio Video</span>
+                    <span class="skill">Adobe Photoshop</span>
+                    <span class="skill">Adobe Illustrator</span>
+                    <span class="skill">Computer Hardware</span>
+                    <span class="skill">Computer Networking</span>
+                    <span class="skill">CloneZilla</span>
+                    <span class="skill">VMware ESXI</span>
+                    <span class="skill">MySQL DBA</span>
+                    <span class="skill">MongoDB</span>
+                    <span class="skill">Windows Admin</span>
+                    <span class="skill">Linux Admin</span>
+                    <span class="skill">Microsoft Excel</span>
+                    <span class="skill">Google App Scripts</span>
+                    <span class="skill">SQL Server DBA</span>
+                    <span class="skill">Regular Expressions</span>
+                    <span class="skill">Golang</span>
+                    <span class="skill">Cisco Switching</span>
+                    <span class="skill">Hyper-V</span>
+                    <span class="skill">Bash</span>
+                    <span class="skill">pfSense</span>
                 </div>
-                <ul class="Accomplishments">
-                    <li>Engineered a new database warehouse with 200 tables</li>
-                    <li>Write Sql Queries to create reports for executives</li>
-                    <li>Active Directory Integration With 6,000 employees records</li>
-                    <li>Use Powershell Scripts for data Integratoins with ETL methods</li>
-                    <li>Use Powershell and RegEx to parse poorly formatted text files</li>
-                </ul>
-            </section>
 
-            <section>
-                <h3 title="Job Title">IT Specialist 2</h3>
-                <div class="job_info">
-                    <span title="Company Name"> Morgan Hill Unified School District</span>
-                    <span>, </span>
-                    <span title="Employment Date Span">May 2016 - Aug 2017 </span>
-                </div>
-                <ul class="Accomplishments">
-                    <li>16 VMware ESXI Servers, 300 vm guest operating systems</li>
-                    <li>Innovated Snip-it Asset Manager, 15,000 IT assets </li>
-                    <li>Innovated osTicket Ticket System, closes 8,000 tickets per year</li>
-                    <li>Innovated repair processes for 9,000 chromebooks</li>
-                    <li>Team Leader of 6 Helpdesk Technicians</li>
-                </ul>
-            </section>
+            </article>
+            <!-- Experience -->
+            <article>
+                <h2>Experience</h2>
 
-            <section>
-                <h3 title="Job Title">System Administrator</h3>
-                <div class="job_info">
-                    <span title="Company Name">CCT Technologies</span>
-                    <span>, </span>
-                    <span title="Employment Date Span">Aug 2015 - Apr 2016 </span>
-                </div>
-                <ul class="Accomplishments">
-                    <li>Diployment of 250 Linux laptop with Clonzilla</li>
-                    <li>Active Directory Migration with 100 ADUsers</li>
-                    <li>Active Diectory Enviorment 20 Apple computers</li>
-                    <li>Office 365 Deployment 40 licenses</li>
-                </ul>
-            </section>
 
-            <section>
+                <section>
+                    <h3 title="Job Title">Data Analyst</h3>
+                    <div class="job_info">
+                        <span title="Company Name"> Morgan Hill Unified School District</span>
+                        <span>, </span>
+                        <span title="Employment Date Span">Sep 2017 -
+                            <i>Present</i>
+                        </span>
+                    </div>
+                    <ul class="Accomplishments">
+                        <li>Engineered a new database warehouse with 200 tables</li>
+                        <li>Write Sql Queries to create reports for executives</li>
+                        <li>Active Directory Integration With 6,000 employees records</li>
+                        <li>Use Powershell Scripts for data Integratoins with ETL methods</li>
+                        <li>Use Powershell and RegEx to parse poorly formatted text files</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 title="Job Title">IT Specialist 2</h3>
+                    <div class="job_info">
+                        <span title="Company Name"> Morgan Hill Unified School District</span>
+                        <span>, </span>
+                        <span title="Employment Date Span">May 2016 - Aug 2017 </span>
+                    </div>
+                    <ul class="Accomplishments">
+                        <li>16 VMware ESXI Servers, 300 vm guest operating systems</li>
+                        <li>Innovated Snip-it Asset Manager, 15,000 IT assets </li>
+                        <li>Innovated osTicket Ticket System, closes 8,000 tickets per year</li>
+                        <li>Innovated repair processes for 9,000 chromebooks</li>
+                        <li>Team Leader of 6 Helpdesk Technicians</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 title="Job Title">System Administrator</h3>
+                    <div class="job_info">
+                        <span title="Company Name">CCT Technologies</span>
+                        <span>, </span>
+                        <span title="Employment Date Span">Aug 2015 - Apr 2016 </span>
+                    </div>
+                    <ul class="Accomplishments">
+                        <li>Diployment of 250 Linux laptop with Clonzilla</li>
+                        <li>Active Directory Migration with 100 ADUsers</li>
+                        <li>Active Diectory Enviorment 20 Apple computers</li>
+                        <li>Office 365 Deployment 40 licenses</li>
+                    </ul>
+                </section>
+
+                <section>
                     <h3 title="Job Title">Helpdesk Technician</h3>
                     <div class="job_info">
                         <span title="Company Name">Meriwest Credit Union</span>
@@ -199,24 +213,44 @@
                         <li>Deploy new computers with Ghost</li>
                     </ul>
                 </section>
-        </article>
+            </article>
 
-        <article id="cert_article">
-            <h2>Certificates</h2>
-            <div id="certificates">
-                <a href="certificates/CompTIA_Security+_certificate.pdf"><img src="certificates/CompTIA_Security+_certificate.jpg" class="certificate_thumbnail"></a>
-                <a href="certificates/Microsoft_Certified_Professional_f372-7247.pdf"><img src="certificates/Microsoft_Certified_Professional_f372-7247.jpg" class="certificate_thumbnail"></a>
-                <a href="certificates/Microsoft_Certified_technology_Specialist_f372-7248.pdf"><img src="certificates/Microsoft_Certified_technology_Specialist_f372-7248.jpg" class="certificate_thumbnail"></a>
-                <a href="certificates/Microsoft_Specialist_f509-3771.pdf"><img src="certificates/Microsoft_Specialist_f509-3771.jpg" class="certificate_thumbnail"></a>
-                <a href="certificates/Sololearn_JavaScript_Certificate_1024-3559687.pdf"><img src="certificates/Sololearn_JavaScript_Certificate_1024-3559687.jpg" class="certificate_thumbnail"></a>
-                <a href="certificates/Sololearn_PHP_Certificate_1059-3559687.pdf"><img src="certificates/Sololearn_PHP_Certificate_1059-3559687.jpg" class="certificate_thumbnail"></a>
-                <a href="certificates/Sololearn_SQL_Certificate_1060-3559687.pdf"><img src="certificates/Sololearn_SQL_Certificate_1060-3559687.jpg" class="certificate_thumbnail"></a>
-                <a href="certificates/Sololearn_HTML_Certificate_1014_3559687.pdf"><img src="certificates/Sololearn_HTML_Certificate_1014_3559687.jpg" class="certificate_thumbnail"></a>
-                <a href="certificates/Sololearn_C++_Certificate_1051-3559687.pdf"><img src="certificates/Sololearn_C++_Certificate_1051-3559687.jpg" class="certificate_thumbnail"></a>
-            </div>
-        </article>
+            <article id="cert_article">
+                <h2>Certificates</h2>
+                <div id="certificates">
+                    <a href="certificates/CompTIA_Security+_certificate.pdf">
+                        <img src="certificates/CompTIA_Security+_certificate.jpg" class="certificate_thumbnail">
+                    </a>
+                    <a href="certificates/Microsoft_Certified_Professional_f372-7247.pdf">
+                        <img src="certificates/Microsoft_Certified_Professional_f372-7247.jpg" class="certificate_thumbnail">
+                    </a>
+                    <a href="certificates/Microsoft_Certified_technology_Specialist_f372-7248.pdf">
+                        <img src="certificates/Microsoft_Certified_technology_Specialist_f372-7248.jpg" class="certificate_thumbnail">
+                    </a>
+                    <a href="certificates/Microsoft_Specialist_f509-3771.pdf">
+                        <img src="certificates/Microsoft_Specialist_f509-3771.jpg" class="certificate_thumbnail">
+                    </a>
+                    <a href="certificates/Sololearn_JavaScript_Certificate_1024-3559687.pdf">
+                        <img src="certificates/Sololearn_JavaScript_Certificate_1024-3559687.jpg" class="certificate_thumbnail">
+                    </a>
+                    <a href="certificates/Sololearn_PHP_Certificate_1059-3559687.pdf">
+                        <img src="certificates/Sololearn_PHP_Certificate_1059-3559687.jpg" class="certificate_thumbnail">
+                    </a>
+                    <a href="certificates/Sololearn_SQL_Certificate_1060-3559687.pdf">
+                        <img src="certificates/Sololearn_SQL_Certificate_1060-3559687.jpg" class="certificate_thumbnail">
+                    </a>
+                    <a href="certificates/Sololearn_HTML_Certificate_1014_3559687.pdf">
+                        <img src="certificates/Sololearn_HTML_Certificate_1014_3559687.jpg" class="certificate_thumbnail">
+                    </a>
+                    <a href="certificates/Sololearn_C++_Certificate_1051-3559687.pdf">
+                        <img src="certificates/Sololearn_C++_Certificate_1051-3559687.jpg" class="certificate_thumbnail">
+                    </a>
+                </div>
+            </article>
 
-    </main>
+        </main>
+    </article>
+
 </body>
 
 </html>
