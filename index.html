@@ -94,6 +94,14 @@
             grid-template-columns: 100%;
             grid-template-rows: auto;
         }
+        .certificate{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+        }
     </style>
 
 </head>
@@ -136,6 +144,7 @@
                 <div class="skills">
                     <span class="skill">Powershell</span>
                     <span class="skill">SQL</span>
+                    <span class="skill">RegEx</span>
                     <span class="skill">Python</span>
                     <span class="skill">Git</span>
                     <span class="skill">Java</span>
@@ -150,15 +159,11 @@
                     <span class="skill">Computer Hardware</span>
                     <span class="skill">Computer Networking</span>
                     <span class="skill">CloneZilla</span>
+                    <span class="skill">SQL Server</span>
                     <span class="skill">MySQL</span>
                     <span class="skill">MongoDB</span>
                     <span class="skill">Windows</span>
                     <span class="skill">Linux</span>
-                    <span class="skill">Micrsoft Excel</span>
-                    <span class="skill">Google Sheets</span>
-                    <span class="skill">Google App Scripts</span>
-                    <span class="skill">SQL Server</span>
-                    <span class="skill">RegEx</span>
                     <span class="skill">Cisco Switching</span>
                     <span class="skill">VMware ESXI</span>
                     <span class="skill">Hyper-V</span>
@@ -167,6 +172,9 @@
                     <span class="skill">pfSense</span>
                     <span class="skill">Nginx</span>
                     <span class="skill">Apache</span>
+                    <span class="skill">Micrsoft Excel</span>
+                    <span class="skill">Google Sheets</span>
+                    <span class="skill">Google App Scripts</span>
                 </div>
 
             </article>
@@ -243,31 +251,40 @@
             <article id="cert_article">
                 <h2>Certificates</h2>
                 <div id="certificates">
-                    <a href="certificates/CompTIA_Security+_certificate.pdf">
+                    <a class="certificate" href="certificates/CompTIA_Security+_certificate.pdf">
+                        <p>Security +</p>
                         <img src="certificates/CompTIA_Security+_certificate.jpg" class="certificate_thumbnail">
                     </a>
-                    <a href="certificates/Microsoft_Certified_Professional_f372-7247.pdf">
+                    <a class="certificate" href="certificates/Microsoft_Certified_Professional_f372-7247.pdf">
+                        <p>MCP</p>
                         <img src="certificates/Microsoft_Certified_Professional_f372-7247.jpg" class="certificate_thumbnail">
                     </a>
-                    <a href="certificates/Microsoft_Certified_technology_Specialist_f372-7248.pdf">
+                    <a class="certificate" href="certificates/Microsoft_Certified_technology_Specialist_f372-7248.pdf">
+                        <p>MCTS</p>
                         <img src="certificates/Microsoft_Certified_technology_Specialist_f372-7248.jpg" class="certificate_thumbnail">
                     </a>
-                    <a href="certificates/Microsoft_Specialist_f509-3771.pdf">
+                    <a class="certificate" href="certificates/Microsoft_Specialist_f509-3771.pdf">
+                        <p>MS</p>
                         <img src="certificates/Microsoft_Specialist_f509-3771.jpg" class="certificate_thumbnail">
                     </a>
-                    <a href="certificates/Sololearn_JavaScript_Certificate_1024-3559687.pdf">
+                    <a class="certificate" href="certificates/Sololearn_JavaScript_Certificate_1024-3559687.pdf">
+                        <p>JS</p>
                         <img src="certificates/Sololearn_JavaScript_Certificate_1024-3559687.jpg" class="certificate_thumbnail">
                     </a>
-                    <a href="certificates/Sololearn_PHP_Certificate_1059-3559687.pdf">
+                    <a class="certificate" href="certificates/Sololearn_PHP_Certificate_1059-3559687.pdf">
+                        <p>PHP</p>
                         <img src="certificates/Sololearn_PHP_Certificate_1059-3559687.jpg" class="certificate_thumbnail">
                     </a>
-                    <a href="certificates/Sololearn_SQL_Certificate_1060-3559687.pdf">
+                    <a class="certificate" href="certificates/Sololearn_SQL_Certificate_1060-3559687.pdf">
+                        <p>SQL</p>
                         <img src="certificates/Sololearn_SQL_Certificate_1060-3559687.jpg" class="certificate_thumbnail">
                     </a>
-                    <a href="certificates/Sololearn_HTML_Certificate_1014_3559687.pdf">
+                    <a class="certificate" href="certificates/Sololearn_HTML_Certificate_1014_3559687.pdf">
+                        <p>HTML</p>
                         <img src="certificates/Sololearn_HTML_Certificate_1014_3559687.jpg" class="certificate_thumbnail">
                     </a>
-                    <a href="certificates/Sololearn_C++_Certificate_1051-3559687.pdf">
+                    <a class="certificate" href="certificates/Sololearn_C++_Certificate_1051-3559687.pdf">
+                        <p>C++</p>
                         <img src="certificates/Sololearn_C++_Certificate_1051-3559687.jpg" class="certificate_thumbnail">
                     </a>
                 </div>
@@ -323,11 +340,11 @@
                     </div>
                     <h4 title="School">Subjects</h4>
                     <div class="skills">
-                        <span class="skill">History</span>
-                        <span class="skill">Elements Semantics</span>
+                        <span class="skill">Element Semantics</span>
                         <span class="skill">Attributes</span>
                         <span class="skill">Inline Styling</span>
                         <span class="skill">Forms</span>
+                        <span class="skill">Web History</span>
                     </div>
                 </section>
 
@@ -376,7 +393,20 @@
                         </div>
                 </section>
             </article>
+        
+        
+            <script type="application/javascript">
+                function getIP(json) {
+                  document.write("My public IP address is: ", json.ip);
+                }
+              </script>
+              
+              <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+        
+        
         </main>
+
+
     </article>
 </body>
 
