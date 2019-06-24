@@ -36,12 +36,6 @@
             background-color: white;
         }
 
-        header {
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: auto;
-        }
-
         p {
             margin: 0;
         }
@@ -59,6 +53,11 @@
 
         #my_name {
             font-size: 3.5em;
+            color: cornflowerblue;
+            text-align: center;
+        }
+        #my_email {
+            font-size: 1em;
             color: cornflowerblue;
             text-align: center;
         }
@@ -124,36 +123,27 @@
 
 <body>
     <article id="resume">
-        <header>
-            <h1 id="my_name">
-                Jacob Ochoa
-            </h1>
-
-            <div id="contact_info">
-                <ul id="contact_info_list">
-                    <li class="contact" title="Address">19351 Dougherty Ave</li>
-                    <li class="contact" title="City">Morgan Hill, CA 95037</li>
-                    <li class="contact" title="PhoneNumber">
-                        <a href="tel:14086590240">+1 (669) 888-5969</a>
-                    </li>
-                    <li class="contact" title="EmailAddress">
-                        <a href="mailto:jacob.ochoa@gmail.com?subject=Job Opportunity">jacobochoa@gmail.com</a>
-                    </li>
-                    <li class="contact" title="Website">
-                        <a href="https://jacobochoa.info/aboutme">jacobochoa.me</a>
-                    </li>
-                </ul>
-            </div>
-        </header>
 
         <main>
+
+
+            <h1 id="my_name">Jacob Ochoa</h1>
+            <div id="my_email"><a href="mailto:jacob.ochoa@gmail.com?subject=Job Opportunity">jacobochoa@gmail.com</a></div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
 
             <!-- Summary:  1-2 sentances -->
             <article>
                 <h2>Summary</h2>
-                <p>I’m a self taught programmer. I enjoy working with languages like Go, Rust, Javascript, SQL, RegEx. I
+                <p>
+                    I’m a self taught programmer. I enjoy working with languages like Go, Rust, Javascript, SQL, RegEx. I
                     have experience with databases like MSSQL, MySql, and PostgreSQL. I am seeking a Entry/Mid level
-                    Software Developer Position.</p>
+                    Software Developer Position.
+                </p>
             </article>
             <!-- Summary:  1-2 sentances -->
             <article>
